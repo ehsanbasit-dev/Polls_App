@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls App - Detail</title>
+</head>
+<body>
+<h1>{{ question.question_txt }}</h1>
+
+<form action="/polls/{{ question.id }}/vote/" method="post"> 
+    {% csrf_token %}
+
+    {% for choice in question.choice_set.all %}
+       <input type="radio" name="choice" value="{{ choice.id }}">
+       <label>{{ choice.choice_txt }}</label><br>
+    {% endfor %}
+
+    <input type="submit" value="Vote">
+</form>
+
+<a href="/polls/">Back to polls</a>
+
+</body>
+</html>
