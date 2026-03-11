@@ -2,17 +2,17 @@
 
 ## About the Project
 
-This is a simple **Polls Web Application** built using the **Django framework**.
-Users can view poll questions, vote for a choice, and see the results.
+This is a simple **Polls Web Application built using Django**.
+Users can view poll questions, select a choice, and see the voting results.
 
-This project was developed while learning **Django from the official Django documentation**.
+This project was created while learning Django using the **official Django documentation tutorial**.
 
 ## Features
 
 * View poll questions
 * Vote for a choice
 * See voting results
-* Admin panel to manage questions and choices
+* Admin panel to manage polls
 
 ## Technologies Used
 
@@ -22,39 +22,52 @@ This project was developed while learning **Django from the official Django docu
 * SQLite
 * Git & GitHub
 
-## How to Run the Project
+## Project Structure
 
-1. Clone the repository
+Polls_App
+│
+├── Polls_App/        # Project settings
+├── polls/            # Polls application
+├── manage.py         # Django management file
+├── requirements.txt  # Project dependencies
+└── README.md
 
-https://github.com/ehsanbasit-dev/Polls_App.git
+## Installation
 
-2. Go to the project folder
+### 1 Clone the repository
 
-  cd Polls_App
+git clone https://github.com/ehsanbasit-dev/Polls_App.git
 
-3. Create a virtual environment
+### 2 Go to project folder
 
-  python -m venv venv
+cd Polls_App
 
-4. Activate the virtual environment
+### 3 Create virtual environment
 
-  Windows:
-  venv\Scripts\activate
+python -m venv venv
 
-5. Install dependencies
+### 4 Activate virtual environment
 
-  pip install -r requirements.txt
+Windows:
+venv\Scripts\activate
 
-6. Apply migrations
+Mac/Linux:
+source venv/bin/activate
 
-  python manage.py migrate
+### 5 Install dependencies
 
-7. Run the development server
+pip install -r requirements.txt
 
-  python manage.py runserver
+### 6 Run migrations
 
-  Then open your browser and go to:
-  http://127.0.0.1:8000/polls/
+python manage.py migrate
+
+### 7 Run the development server
+
+python manage.py runserver
+
+Open in your browser:
+http://127.0.0.1:8000/polls/
 
 ## Admin Panel
 
@@ -67,8 +80,6 @@ http://127.0.0.1:8000/admin/
 
 ## Author
 
-Ehsan Basit
-BS Software Engineering Graduate
+**Ehsan Basit**
+BS Software Engineering
 Backend Developer (Python / Django)
-
-
